@@ -1,0 +1,17 @@
+{
+    "manifest_version": 3,
+    "name": "Manga Logger",
+    "version": "1.0",
+    "description": "Logs manga URLs to a Python script.",
+    "permissions": ["webNavigation"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://mangakakalot.com/chapter/*"],
+          "js": ["content.js"]
+        }
+      ]
+  }
+  
