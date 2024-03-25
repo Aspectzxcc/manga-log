@@ -9,9 +9,12 @@
     },
     "content_scripts": [
         {
-          "matches": ["*://mangakakalot.com/chapter/*"],
+          "matches": [
+            "*://mangakakalot.com/chapter/*", 
+            "*://chapmanganato.to/*/chapter-*"
+          ],
           "js": ["content.js"]
         }
-      ]
+    ]
   }
   
